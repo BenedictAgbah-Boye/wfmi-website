@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Winners Family Ministry International — growing together in faith, family, purpose and impact.">
+  <title>Winners Family Ministry International | WFMI</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS for this first version -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --navy: #07172f;
+      --blue: #123b70;
+      --gold: #d6a642;
+      --cream: #f8f5ed;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      background: var(--cream);
+      color: var(--navy);
+    }
+
+    h1, h2, h3 {
+      font-family: "Playfair Display", serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .gold-button {
+      background: var(--gold);
+      color: var(--navy);
+      transition: 0.2s ease;
+    }
+
+    .gold-button:hover {
+      background: #e7bd62;
+      transform: translateY(-2px);
+    }
+
+    .hero-background {
+      background:
+        linear-gradient(90deg, rgba(7,23,47,.96), rgba(7,23,47,.76)),
+        url("https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1800&q=85");
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <a href="#home" class="flex items-center gap-3">
+        <!-- Replace this image with your official WFMI logo -->
+        <img
+          src="images/wfmi-logo.png"
+          alt="WFMI Logo"
+          class="w-14 h-14 object-contain"
+          onerror="this.style.display='none'"
+        >
+        <div>
+          <p class="font-bold text-sm md:text-base">WINNERS FAMILY</p>
+          <p class="text-xs tracking-widest text-gray-500">MINISTRY INTERNATIONAL</p>
+        </div>
+      </a>
+
+      <button
+        id="menu-button"
+        class="md:hidden text-2xl"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <div id="nav-links" class="hidden md:flex items-center gap-7 text-sm font-semibold">
+        <a href="#home" class="hover:text-yellow-600">Home</a>
+        <a href="#about" class="hover:text-yellow-600">About</a>
+        <a href="#ministries" class="hover:text-yellow-600">Ministries</a>
+        <a href="#prayer" class="hover:text-yellow-600">Prayer Meetings</a>
+        <a href="#contact" class="gold-button px-5 py-3 rounded-full">Get in Touch</a>
+      </div>
+    </nav>
+
+    <!-- Mobile navigation -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-5">
+      <a class="block py-2" href="#home">Home</a>
+      <a class="block py-2" href="#about">About</a>
+      <a class="block py-2" href="#ministries">Ministries</a>
+      <a class="block py-2" href="#prayer">Prayer Meetings</a>
+      <a class="block py-2" href="#contact">Get in Touch</a>
+      <a href="#executives">Executives</a>
+
+    </div>
+  </header>
+
+
+  <!-- =========================
+       HERO SECTION
+  ========================== -->
+  <main>
+    <section id="home" class="hero-background text-white min-h-[620px] flex items-center">
+      <div class="max-w-7xl mx-auto px-6 py-24 w-full">
+        <div class="max-w-3xl">
+
+          <p class="text-yellow-400 uppercase tracking-[0.25em] text-sm font-bold mb-6">
+            Welcome to WFMI
+          </p>
+
+          <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-7">
+            Growing Together.<br>
+            Living with Purpose.
+          </h1>
+
+          <p class="text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl mb-9">
+            Welcome to Winners Family Ministry International, an online
+            ministry committed to faith, spiritual growth, fellowship
+            and discovering God's purpose for our lives.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="#about" class="gold-button px-8 py-4 rounded-full font-bold">
+              Discover WFMI
+            </a>
+
+            <a
+              href="https://chat.whatsapp.com/Jw1eFY4XrYE5QBCEH1mXxH?s=cl&p=a&ilr=4"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="border border-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-blue-950 transition"
+            >
+              Join Our Community
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================
+         WELCOME SECTION
+    ========================== -->
+    <section class="py-20 px-6 text-center">
+      <div class="max-w-3xl mx-auto">
+
+        <p class="text-yellow-700 uppercase tracking-widest text-sm font-bold mb-4">
+          A family of faith
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+          You Belong Here
+        </h2>
+
+        <p class="text-gray-600 text-lg leading-relaxed">
+          At Winners Family Ministry International, we believe that
+          everyone has a place in God's family. We are building a
+          community where people can grow spiritually, strengthen
+          their faith, encourage one another and walk confidently
+          in their God-given purpose.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         ABOUT SECTION
+    ========================== -->
+    <section id="about" class="bg-white py-20 px-6">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+
+        <div>
+          <p class="text-yellow-700 uppercase tracking-widest text-sm font-bold mb-4">
+            Get to know us
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-bold mb-7">
+            About Winners Family Ministry International
+          </h2>
+
+          <p class="text-gray-600 leading-relaxed mb-5">
+            Winners Family Ministry International is an online Christian
+            ministry focused on helping people grow in their relationship
+            with God and build meaningful relationships through faith
+            and fellowship.
+          </p>
+
+          <p class="text-gray-600 leading-relaxed mb-8">
+            Through prayer, teaching, learning and community, we seek
+            to encourage believers to grow in Christ and live purposeful lives.
+          </p>
+
+          <a href="#contact" class="font-bold text-blue-900 hover:text-yellow-700">
+            Connect with us →
+          </a>
+        </div>
+
+        <div class="rounded-3xl p-10 md:p-14 bg-blue-950 text-white">
+          <div class="text-yellow-400 text-4xl mb-5">✦</div>
+
+          <h3 class="text-3xl font-bold mb-5">Our Heart</h3>
+
+          <p class="text-gray-200 leading-relaxed">
+            To build a growing family of faith where people are encouraged
+            to know Christ, grow spiritually, discover purpose and make
+            a positive impact.
+          </p>
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- =========================
+     WFMI EXECUTIVES SECTION
+========================== -->
+<section id="executives" class="bg-white py-20 px-6">
+
+  <div class="max-w-7xl mx-auto">
+
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <p class="text-yellow-700 uppercase tracking-widest text-sm font-bold mb-4">
+        Leadership and service
+      </p>
+
+      <h2 class="text-4xl md:text-5xl font-bold mb-5">
+        Meet Our Executives
+      </h2>
+
+      <p class="text-gray-600 leading-relaxed">
+        Introducing the newly appointed executives of Winners Family
+        Ministry International, committed to serving, leading and
+        advancing the vision of the ministry.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="bg-[#F8F5ED] rounded-2xl p-7">
+        <h3 class="text-xl font-bold mb-2">Derrick Ganyuie</h3>
+        <p class="text-yellow-700 font-semibold text-sm">
+          Personal Assistant to the Man of God
+        </p>
+      </div>
+
+      <div class="bg-[#F8F5ED] rounded-2xl p-7">
+        <h3 class="text-xl font-bold mb-2">Rachealina Etornam Dometi</h3>
+        <p class="text-yellow-700 font-semibold text-sm">General Secretary</p>
+      </div>
+
+      <div class="bg-[#F8F5ED] rounded-2xl p-7">
+        <h3 class="text-xl font-bold mb-2">Kelvin Nyarko</h3>
+        <p class="text-yellow-700 font-semibold text-sm">Prayer Secretary</p>
+      </div>
+
+      <div class="bg-[#F8F5ED] rounded-2xl p-7">
+        <h3 class="text-xl font-bold mb-2">Nana Yaw Afriyie</h3>
+        <p class="text-yellow-700 font-semibold text-sm">Deputy Prayer Secretary</p>
+      </div>
+
+      <div class="bg-[#F8F5ED] rounded-2xl p-7">
+        <h3 class="text-xl font-bold mb-2">Evans Appiah Essel</h3>
+        <p class="text-yellow-700 font-semibold text-sm">Evangelism Coordinator</p>
+      </div>
+
+      <div class="bg-[#F8F5ED] rounded-2xl p-7">
+        <h3 class="text-xl font-bold mb-2">Nathaniel Quainoo</h3>
+        <p class="text-yellow-700 font-semibold text-sm">
+          Deputy Evangelism Coordinator
+        </p>
+      </div>
+
+      <div class="bg-[#F8F5ED] rounded-2xl p-7">
+        <h3 class="text-xl font-bold mb-2">Gabriel Paintsil</h3>
+        <p class="text-yellow-700 font-semibold text-sm">
+          Bible Studies Coordinator
+        </p>
+      </div>
+
+      <div class="bg-[#F8F5ED] rounded-2xl p-7">
+        <h3 class="text-xl font-bold mb-2">Ali Hamid Kabreafo</h3>
+        <p class="text-yellow-700 font-semibold text-sm">
+          Deputy Bible Studies Coordinator
+        </p>
+      </div>
+
+      <div class="bg-[#F8F5ED] rounded-2xl p-7">
+        <h3 class="text-xl font-bold mb-2">Emmanuel Assum</h3>
+        <p class="text-yellow-700 font-semibold text-sm">Organizer</p>
+      </div>
+
+      <div class="bg-[#F8F5ED] rounded-2xl p-7">
+        <h3 class="text-xl font-bold mb-2">Miriam Naa</h3>
+        <p class="text-yellow-700 font-semibold text-sm">Deputy Organizer</p>
+      </div>
+
+      <div class="bg-[#F8F5ED] rounded-2xl p-7">
+        <h3 class="text-xl font-bold mb-2">Silvanus Antana</h3>
+        <p class="text-yellow-700 font-semibold text-sm">Head of Media</p>
+      </div>
+
+      <div class="bg-[#F8F5ED] rounded-2xl p-7">
+        <h3 class="text-xl font-bold mb-2">Mends</h3>
+        <p class="text-yellow-700 font-semibold text-sm">Deputy Media</p>
+      </div>
+
+      <div class="bg-[#F8F5ED] rounded-2xl p-7">
+        <h3 class="text-xl font-bold mb-2">Baah Dominic Didje</h3>
+        <p class="text-yellow-700 font-semibold text-sm">
+          Financial Secretary
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- =========================
+         MINISTRIES SECTION
+    ========================== -->
+    <section id="ministries" class="py-20 px-6">
+      <div class="max-w-7xl mx-auto">
+
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <p class="text-yellow-700 uppercase tracking-widest text-sm font-bold mb-4">
+            Growing in faith
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-bold mb-5">
+            Our Ministries
+          </h2>
+
+          <p class="text-gray-600">
+            Opportunities to learn, grow and build a stronger foundation
+            in faith at every stage of life.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-7">
+
+          <article class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+            <div class="text-4xl mb-5">🌱</div>
+            <h3 class="text-2xl font-bold mb-4">Children's Ministry</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Helping children develop an understanding of God's love
+              and build a foundation of faith.
+            </p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+            <div class="text-4xl mb-5">✨</div>
+            <h3 class="text-2xl font-bold mb-4">Youth Ministry</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Encouraging young people to grow in faith, discover their
+              gifts and live with purpose.
+            </p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+            <div class="text-4xl mb-5">📖</div>
+            <h3 class="text-2xl font-bold mb-4">Adult Foundational Classes</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Building a stronger understanding of biblical principles
+              and Christian living.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================
+         PRAYER MEETINGS
+    ========================== -->
+    <section id="prayer" class="bg-blue-950 text-white py-20 px-6">
+      <div class="max-w-7xl mx-auto">
+
+        <div class="text-center mb-14">
+          <p class="text-yellow-400 uppercase tracking-widest text-sm font-bold mb-4">
+            Let us pray together
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-bold mb-5">
+            Our Prayer Meetings
+          </h2>
+
+          <p class="text-gray-300">
+            Join us as we come together in prayer and fellowship.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-6">
+
+          <div class="border border-blue-800 rounded-2xl p-8 text-center">
+            <h3 class="text-2xl font-bold mb-3">Monday</h3>
+            <p class="text-yellow-400 font-semibold">9:00 PM – 10:00 PM</p>
+          </div>
+
+          <div class="border border-blue-800 rounded-2xl p-8 text-center">
+            <h3 class="text-2xl font-bold mb-3">Tuesday</h3>
+            <p class="text-yellow-400 font-semibold">9:00 PM – 10:00 PM</p>
+          </div>
+
+          <div class="border border-blue-800 rounded-2xl p-8 text-center">
+            <h3 class="text-2xl font-bold mb-3">Thursday</h3>
+            <p class="text-yellow-400 font-semibold">9:00 PM – 10:00 PM</p>
+          </div>
+
+        </div>
+
+        <p class="text-center text-gray-300 text-sm mt-7">
+          All meeting times are in Ghana time (GMT).
+        </p>
+
+        <div class="text-center mt-9">
+          <a
+            href="https://chat.whatsapp.com/Jw1eFY4XrYE5QBCEH1mXxH?s=cl&p=a&ilr=4"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="gold-button inline-block px-8 py-4 rounded-full font-bold"
+          >
+            Join Our WhatsApp Community
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         CONTACT SECTION
+    ========================== -->
+    <section id="contact" class="py-20 px-6">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-14">
+
+        <div>
+          <p class="text-yellow-700 uppercase tracking-widest text-sm font-bold mb-4">
+            We'd love to hear from you
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">
+            Get in Touch
+          </h2>
+
+          <p class="text-gray-600 leading-relaxed mb-8">
+            Have a question, prayer request or want to know more about
+            the ministry? Send us a message. We'd be glad to connect with you.
+          </p>
+
+          <div class="bg-white rounded-2xl p-6 shadow-sm">
+            <p class="font-bold mb-2">Connect with WFMI on WhatsApp</p>
+            <p class="text-gray-600 mb-4">+233 24 247 3573</p>
+
+            <a
+              href="https://wa.me/233242473573"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="font-bold text-green-700 hover:underline"
+            >
+              Chat with us on WhatsApp →
+            </a>
+          </div>
+        </div>
+
+
+        <!-- This form opens WhatsApp with the visitor's message prepared.
+             The visitor must press Send in WhatsApp. -->
+        <form id="contact-form" class="bg-white rounded-3xl shadow-sm p-8">
+
+          <label for="name" class="block font-semibold mb-2">Your Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            class="w-full border border-gray-200 rounded-xl p-4 mb-5 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            placeholder="Enter your name"
+          >
+
+          <label for="email" class="block font-semibold mb-2">Email Address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            class="w-full border border-gray-200 rounded-xl p-4 mb-5 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            placeholder="Enter your email"
+          >
+
+          <label for="subject" class="block font-semibold mb-2">Subject</label>
+          <select
+            id="subject"
+            name="subject"
+            required
+            class="w-full border border-gray-200 rounded-xl p-4 mb-5 bg-white focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          >
+            <option value="">Choose a subject</option>
+            <option>General Inquiry</option>
+            <option>Prayer Request</option>
+            <option>Plan a Visit</option>
+            <option>Ministry Information</option>
+          </select>
+
+          <label for="message" class="block font-semibold mb-2">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            class="w-full border border-gray-200 rounded-xl p-4 mb-6 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            placeholder="Write your message here..."
+          ></textarea>
+
+          <button
+            type="submit"
+            class="gold-button w-full py-4 rounded-xl font-bold"
+          >
+            Send Message via WhatsApp
+          </button>
+
+          <p class="text-xs text-gray-500 mt-4">
+            WhatsApp will open with your message prepared. Please review
+            it and press Send to deliver it to WFMI.
+          </p>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="bg-[#07172f] text-white py-12 px-6">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+
+        <div>
+          <h2 class="text-2xl font-bold mb-3">
+            Winners Family Ministry International
+          </h2>
+
+          <p class="text-gray-300">
+            Growing in faith. Living with purpose. Impacting lives.
+          </p>
+        </div>
+
+        <div class="md:text-right">
+          <a
+            href="https://chat.whatsapp.com/Jw1eFY4XrYE5QBCEH1mXxH?s=cl&p=a&ilr=4"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-yellow-400 hover:underline"
+          >
+            Join our WhatsApp community
+          </a>
+        </div>
+
+      </div>
+
+      <div class="border-t border-blue-900 mt-9 pt-6 text-center text-sm text-gray-400">
+        © <span id="copyright-year"></span> Winners Family Ministry International.
+        All rights reserved.
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+  <script>
+    // Mobile navigation menu
+    const menuButton = document.getElementById("menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuButton.addEventListener("click", () => {
+      const isHidden = mobileMenu.classList.toggle("hidden");
+      menuButton.setAttribute("aria-expanded", String(!isHidden));
+      menuButton.textContent = isHidden ? "☰" : "✕";
+    });
+
+    // Close mobile menu after a visitor selects a link
+    mobileMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.textContent = "☰";
+      });
+    });
+
+    // Contact form: prepare a WhatsApp message
+    const contactForm = document.getElementById("contact-form");
+
+    contactForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const subject = document.getElementById("subject").value;
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !subject || !message) {
+        alert("Please complete all the fields before continuing.");
+        return;
+      }
+
+      const whatsappMessage =
+        "WFMI WEBSITE ENQUIRY\n\n" +
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Subject: " + subject + "\n\n" +
+        "Message:\n" + message;
+
+      const whatsappURL =
+        "https://wa.me/233242473573?text=" +
+        encodeURIComponent(whatsappMessage);
+
+      window.open(whatsappURL, "_blank", "noopener,noreferrer");
+    });
+
+    // Automatically update the copyright year
+    document.getElementById("copyright-year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
